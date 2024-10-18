@@ -1,0 +1,300 @@
+/* RESET STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0f2d;
+    color: #050e1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80em;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 15px;
+}
+
+/* Centrer l'élément sur la page */
+
+
+#socialclear {
+    position: absolute; /* Fixe l'image en haut de la page */
+    top: 0; /* Positionne l'image tout en haut */
+    left: 50%; /* Positionne l'image au centre horizontalement */
+    transform: translateX(-60%); /* Recentre l'image car elle est positionnée par rapport à son centre */
+    margin-top: 10px; /* Optionnel : pour ajouter un peu d'espace par rapport au bord supérieur */
+    /*max-width: 100px;*/ /* Ajuste la taille du logo, tu peux modifier cette valeur */
+    height: auto; /* Maintient les proportions de l'image */
+    z-index: 1000; /* Assure que l'image reste toujours au-dessus des autres éléments */
+}
+
+#login-form {
+    margin-top: 120px;    
+    display: flex; /* Utilise Flexbox pour aligner les éléments à l'intérieur du formulaire */
+    flex-direction: column; /* Organise les éléments en colonne */
+    padding: 40px; /* Ajoute du padding à l'intérieur du formulaire */
+    background-color: #1c1e3c; /* Fond du formulaire */
+    border-radius: 10px; /* Bord arrondi */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    width: 100%;
+    max-width: 400px; /* Largeur maximale du formulaire */
+}   
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex; /* Utilisation de Flexbox pour aligner horizontalement */
+    justify-content: flex-start; /* Aligne les éléments au début (gauche) */
+    align-items: center; /* Centre verticalement les éléments */
+    text-align: initial;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    width: 28%;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: white; /* Texte des labels en blanc */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px ;
+    border-radius: 5px;
+    border: none;
+    background-color: white; /* Fond blanc pour les champs */
+    color: #333; /* Texte en gris foncé pour les champs */
+    font-size: 16px;
+    display: flex;
+}
+
+
+input[type="radio"] {
+
+    margin-right: 10px; /* Espace entre le bouton radio et le label */
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b92929;
+}
+
+/* CONTAINER GRID */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+/* TITRE DE PAGE */
+h1 {
+
+    text-align: center;
+    color: #1d1d21;
+}
+
+/* SECTION CONTENU GÉNÉRAL */
+.content {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content h2 {
+    color: #1c1e3c;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* BOUTONS GLOBAUX */
+button {
+    display: inline-block;
+    background-color: #8C96E3;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #3747c3;
+}
+
+.hidden {
+    display: none;
+}
+
+/* BOUTONS THÈMES */
+
+
+#themes button {
+    background-color: #8C96E3;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    align-items: center;
+    padding: 70px;
+    max-width: 30%;
+    
+}
+
+#themes button:hover {
+    background-color: #3747c3;
+    margin-bottom: 10px;
+}
+
+/* PAGE DE CONNAISSANCE */
+#knowledge-page {
+    margin-top: 70px;
+    padding: 20px;
+    padding-left: 40px;
+    border-left: 5px solid #3498db;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+#knowledge-page h2 {
+    color: #2980b9;
+    font-size: 24px;
+}
+
+#knowledge-page p {
+    font-size: 18px;
+    color: #34495e;
+}
+
+/* SECTION QUIZ */
+#quiz {
+    margin-top: 20px;
+}
+
+#quiz-title {
+    margin: 20px ; /* Ajoute de l'espace en haut */
+    margin-top: 100px;
+    font-size: 24px;
+    color: #9facb8;
+    text-align: center; /* Centre le texte et l'image */
+    
+    width: 100%; /* S'assure que le titre prenne toute la largeur */
+}
+
+
+#question {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #e8e9f0;
+    color: black ; 
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 0 auto;
+    
+}
+
+/* OPTIONS CONTAINER - POUR LES RÉPONSES */
+#options-container {
+    height: 10px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#options-container button {
+    background-color: #8C96E3;
+    display: flex;
+    justify-content: center; /* Aligne le contenu des boutons au centre */
+    align-items: center; /* Centre verticalement le texte */
+    gap: 10px; /* Espace entre les éléments internes (si jamais tu as du contenu supplémentaire dans les boutons) */
+    width: 100%; /* Les boutons prendront toute la largeur disponible */
+    max-width: 300px; /* Augmente la largeur maximale */
+    padding: 30px; /* Augmente la taille du bouton en hauteur */
+    font-size: 20px; /* Augmente la taille du texte */
+    text-align: center;
+    border-radius: 10px; /* Optionnel : arrondit les bords pour un style plus moderne */
+    transition: background-color 0.3s ease;
+    
+}
+
+
+#options-container button:hover {
+    background-color: #3747c3;
+}
+
+/* SECTION RÉSULTATS */
+#result-page {
+    text-align: center;
+}
+
+#result-score {
+    margin-top: 50px;
+    font-size: 22px;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+#restart-btn {
+    background-color: #f39c12;
+}
+
+#restart-btn:hover {
+    background-color: #e67e22;
+}
+
+/* DESIGN RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 28px;
+    }
+
+    #quiz-title {
+        font-size: 22px;
+    }
+
+    button {
+        padding: 100px 15px;
+        font-size: 14px;
+    }
+
+    #knowledge-page p,
+    #question,
+    #result-score {
+        font-size: 16px;
+    }
+
+    #options-container button {
+        font-size: 16px;
+    }
+
+}
